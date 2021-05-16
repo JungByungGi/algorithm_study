@@ -49,6 +49,15 @@ class NodeMgmt:
                 else:
                     node = node.next
 
+    # 노드 검색
+    def search_node(self, data):
+        node = self.head
+        while node:
+            if node.data == data:
+                return node
+            else:
+                node = node.next
+
 
 # 링크드 리스트 데이터 추가 확인
 '''
@@ -76,3 +85,4 @@ linkedlist1.desc()
 print("데이터 9 삭제 후")
 linkedlist1.delete(9)
 linkedlist1.desc()
+print(linkedlist1.search_node(8).data) # 노드 검색
