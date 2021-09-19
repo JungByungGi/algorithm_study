@@ -7,7 +7,6 @@ print(hash_table)
 def hash_func(key):
     return key % 5
 
-
 # 해쉬 테이블 저장
 data1 = 'Andy'
 data2 = 'July'
